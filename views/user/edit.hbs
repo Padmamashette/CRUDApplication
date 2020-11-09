@@ -1,0 +1,25 @@
+<h3>{{viewTitle}}</h3>
+ 
+<form action="/user" method="POST" enctype="multipart/form-data" autocomplete="off" >
+<input type="hidden" name="_id" value="{{user.id}}">
+    <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" name="name" placeholder="enter name">
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <input type="text" class="form-control" name="email" placeholder="enter email">
+    </div>
+    <div class="form-group">
+        <label>Phone Number</label>
+        <input type="text" class="form-control" name="phone_number" placeholder="enter phone number">
+    </div>
+     <div class="form-group">  
+      <label>Upload Image</label>
+        <input type="file" class="form-control" name="image" >
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-info"><i class="fa fa-database" ></i>Submit</button>
+        <a class="btn btn-success" href="/user/list"><i class="fa fa-list-alt"></i>Get All Users</a>
+    </div>
+</form>

@@ -1,0 +1,5 @@
+{
+    "env": {
+        "process.env.Padma_pwd": "Padma@15"
+    }
+}
